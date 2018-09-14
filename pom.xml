@@ -12,6 +12,7 @@
     <modules>
         <module>autoconfigure</module>
         <module>overview</module>
+        <module>spring-application</module>
     </modules>
 
     <parent>

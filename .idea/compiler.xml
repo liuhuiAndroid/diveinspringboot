@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="autoconfigure" />
         <module name="overview" />
+        <module name="springapplication" />
       </profile>
     </annotationProcessing>
   </component>
