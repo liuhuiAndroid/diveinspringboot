@@ -9,6 +9,7 @@
         <module name="autoconfigure" />
         <module name="overview" />
         <module name="springapplication" />
+        <module name="springbootview" />
         <module name="springbootwebmvc" />
         <module name="springwebmvc" />
       </profile>
