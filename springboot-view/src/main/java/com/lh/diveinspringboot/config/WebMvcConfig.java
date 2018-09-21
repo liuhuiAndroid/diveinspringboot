@@ -21,7 +21,7 @@ import java.io.File;
 public class WebMvcConfig implements WebMvcConfigurer {
 
     @Bean
-    public ViewResolver viewResolver() {
+    public ViewResolver myViewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
         viewResolver.setPrefix("/WEB-INF/jsp/");
@@ -29,6 +29,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
         viewResolver.setOrder(Ordered.LOWEST_PRECEDENCE - 10);
         viewResolver.setContentType("text/xml;charset=UTF-8");
         return viewResolver;
+    }
+
+
+    @Override
+    public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
+        configurer.favorParameter(true).favorPathExtension(true);
     }
 
     @Override

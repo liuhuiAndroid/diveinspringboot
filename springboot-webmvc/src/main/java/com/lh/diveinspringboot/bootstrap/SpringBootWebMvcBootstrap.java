@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootWebMvcBootstrap {
 
     public static void main(String[] args) {
+        System.out.println("The service to start.");
         SpringApplication.run(SpringBootWebMvcBootstrap.class);
+        System.out.println("The service has started.");
     }
 
 }
