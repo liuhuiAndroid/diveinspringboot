@@ -16,6 +16,7 @@
         <module>spring-webmvc</module>
         <module>springboot-webmvc</module>
         <module>springboot-view</module>
+        <module>springboot-rest</module>
     </modules>
 
     <parent>
