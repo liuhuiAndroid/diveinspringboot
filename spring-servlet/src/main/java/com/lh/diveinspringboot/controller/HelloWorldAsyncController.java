@@ -16,6 +16,7 @@ public class HelloWorldAsyncController {
     // 超时随机数
     private final Random random = new Random();
 
+    // 这个注解在容器启动时便会生效,5秒执行一次任务
     @Scheduled(fixedRate = 5000)
     public void process() throws InterruptedException { // 定时操作
         DeferredResult<String> result = null;
@@ -34,6 +35,7 @@ public class HelloWorldAsyncController {
     @GetMapping("/hello-world")
     public DeferredResult<String> helloWorld() {
         DeferredResult<String> result = new DeferredResult<>(50L);
+        // 将指定元素插入此队列中
         queue.offer(result);
         println("Hello,World");
         result.onCompletion(() -> println("执行结束"));

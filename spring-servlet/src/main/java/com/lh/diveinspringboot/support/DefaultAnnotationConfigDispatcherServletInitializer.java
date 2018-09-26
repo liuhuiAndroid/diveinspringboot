@@ -1,6 +1,5 @@
 package com.lh.diveinspringboot.support;
 
-
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -25,4 +24,3 @@ public class DefaultAnnotationConfigDispatcherServletInitializer extends Abstrac
     }
 
 }
-
