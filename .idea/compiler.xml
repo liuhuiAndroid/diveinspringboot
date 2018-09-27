@@ -10,6 +10,7 @@
         <module name="overview" />
         <module name="springapplication" />
         <module name="springbootrest" />
+        <module name="springbootservlet" />
         <module name="springbootview" />
         <module name="springbootwebmvc" />
         <module name="springservlet" />
