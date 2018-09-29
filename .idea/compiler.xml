@@ -13,6 +13,7 @@
         <module name="springbootservlet" />
         <module name="springbootview" />
         <module name="springbootwebmvc" />
+        <module name="springreactive" />
         <module name="springservlet" />
         <module name="springwebmvc" />
       </profile>
