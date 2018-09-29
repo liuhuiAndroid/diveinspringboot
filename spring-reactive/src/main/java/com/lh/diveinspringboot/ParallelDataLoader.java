@@ -17,7 +17,7 @@ public class ParallelDataLoader extends DataLoader {
         int count = 0;
         while (count < 3) { // 等待三个任务完成
             if (completionService.poll() != null) {
-                w
+                count++;
             }
         }
         executorService.shutdown();
