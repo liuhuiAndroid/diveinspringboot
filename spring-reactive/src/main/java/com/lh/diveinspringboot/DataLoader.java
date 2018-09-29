@@ -10,6 +10,7 @@ public class DataLoader {
         long costTime = System.currentTimeMillis() - startTime; // 消耗时间
         System.out.println("load() 总耗时：" + costTime + " 毫秒");
     }
+
     protected void doLoad() { // 串行计算
         loadConfigurations(); // 耗时 1s
         loadUsers(); // 耗时 2s
@@ -19,12 +20,15 @@ public class DataLoader {
     protected final void loadConfigurations() {
         loadMock("loadConfigurations()", 1);
     }
+
     protected final void loadUsers() {
         loadMock("loadUsers()", 2);
     }
+
     protected final void loadOrders() {
         loadMock("loadOrders()", 3);
     }
+
     private void loadMock(String source, int seconds) {
         try {
             long startTime = System.currentTimeMillis();
@@ -37,6 +41,7 @@ public class DataLoader {
             throw new RuntimeException(e);
         }
     }
+
     public static void main(String[] args) {
         new DataLoader().load();
     }
